@@ -1,0 +1,13 @@
+{
+  "name": "betme.frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "",
+    "lint": ""
+  },
+  "dependencies": {
+    "@vue/cli": "^4.3.1"
+  },
+  "devDependencies": {}
+}

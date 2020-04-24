@@ -1,0 +1,12 @@
+{
+  "name": "betme",
+  "version": "2.0.0",
+  "private": true,
+  "workspaces": [
+    "betme.*"
+  ],
+  "dependencies": {
+    "betme.backend": "1.0.0",
+    "betme.frontend": "1.0.0"
+  }
+}
