@@ -1,14 +1,17 @@
 module.exports = {
+  root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
+    project: './tsconfig.json'
   },
+  plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+    'plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],
   rules: {
     'array-bracket-newline': ['warn', 'consistent'],
@@ -20,6 +23,8 @@ module.exports = {
     'no-trailing-spaces': ['warn', { skipBlankLines: true }],
     'object-curly-newline': ['warn', { consistent: true }],
     'object-curly-spacing': ['warn', 'always'],
-    'object-property-newline': ['warn', 'never']
+    'quote-props': ['warn', 'consistent-as-needed'],
+    'semi': ['error', 'always'],
+    'semi-style': ['error', 'last']
   }
 };

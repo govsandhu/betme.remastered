@@ -1,6 +1,13 @@
-import * as express from 'express';
+import App from './app';
 
-const PORT = process.env.PORT || 3000;
-const app = express();
-app.get('/', (req, res) => res.send('Hello World!'));
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
+function run(): void {
+  const port = process.env.PORT || 3000;
+
+  try {
+    App.listen(port, () => console.log(`BetMe express server is listening on port ${port}`));
+  } catch (e) {
+    console.log('Unable to start app');
+  }
+}
+
+run();
