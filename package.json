@@ -7,6 +7,6 @@
   ],
   "dependencies": {
     "betme.backend": "1.0.0",
-    "betme.frontend": "1.0.0"
+    "betme.web": "1.0.0"
   }
 }
