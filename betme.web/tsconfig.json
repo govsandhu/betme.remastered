@@ -2,17 +2,7 @@
   "extends": "../betme.backend/tsconfig.json",
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "strict": true,
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": false,
     "rootDir": "./src",
-    "sourceMap": false,
-    "inlineSourceMap": false,
-    "inlineSources": false,
-    "baseUrl": ".",
     "types": [
       "webpack-env"
     ],
@@ -27,9 +17,5 @@
       "dom.iterable",
       "scripthost"
     ]
-  },
-  "exclude": [
-    "**/node_modules",
-    "**/dist"
-  ]
+  }
 }
