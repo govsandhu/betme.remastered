@@ -6,8 +6,8 @@
     "strict": true,
     "importHelpers": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": false,
     "rootDir": "./src",
     "sourceMap": false,
     "inlineSourceMap": false,
@@ -28,13 +28,8 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.js",
-    "src/**/*.vue"
-  ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "**/node_modules",
+    "**/dist"
   ]
 }
