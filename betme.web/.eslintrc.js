@@ -9,7 +9,8 @@ module.exports = {
     '@vue/airbnb',
     '@vue/typescript',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript'
+    'plugin:import/typescript',
+    'plugin:vue-scoped-css/recommended'
   ],
   rules: {
     'vue/singleline-html-element-content-newline': ['off', {
@@ -34,6 +35,7 @@ module.exports = {
     'no-trailing-spaces': ['warn', { skipBlankLines: true }],
     'object-curly-newline': ['warn', { consistent: true }],
     'object-curly-spacing': ['warn', 'always'],
+    'quotes': ['error', 'single', { avoidEscape: true }],
     'quote-props': ['warn', 'consistent-as-needed'],
     'semi': ['error', 'always'],
     'semi-style': ['error', 'last']
