@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import Navbar from '@/components/navbar.vue';
+import Navbar from '@/components/navbar/Navbar.vue';
 
 export default Vue.extend({
   components: {
@@ -16,6 +16,6 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
-@import "./styles/styles.scss";
+<style lang="scss"> // eslint-disable-line vue-scoped-css/require-scoped
+@import './styles/styles.scss';
 </style>
