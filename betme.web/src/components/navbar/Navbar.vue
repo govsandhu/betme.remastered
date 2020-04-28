@@ -52,7 +52,7 @@ export default Vue.extend({
     display: flex;
     flex-direction: row;
     height: 52px;
-    padding: 18px 0px 0px 0px;
+    padding: 18px 0px 0px 40px;
   }
 
   &-right {

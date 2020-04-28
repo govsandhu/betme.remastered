@@ -18,11 +18,11 @@ export default Vue.extend({});
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s;
-  margin: 0px 30px 0px 40px;
+  margin: 0px 30px 0px 0px;
   font: {
     size: 30px;
     weight: 700;
-    family: "Ubuntu", sans-serif;
+    family: 'Ubuntu', sans-serif;
   }
 
   &:hover {
