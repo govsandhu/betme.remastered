@@ -10,9 +10,10 @@ module.exports = {
     '@vue/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:vue-scoped-css/recommended'
+    // 'plugin:vue-scoped-css/recommended'
   ],
   rules: {
+    "vue/mustache-interpolation-spacing": ["warn", "always"],
     'vue/singleline-html-element-content-newline': ['off', {
       ignoreWhenNoAttributes: true,
       ignoreWhenEmpty: true
