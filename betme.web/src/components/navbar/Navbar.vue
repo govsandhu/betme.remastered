@@ -4,7 +4,9 @@
       <Logo />
       <GameIcon v-for="game in games" :key="game.name" :game="game" />
     </div>
-    <div class="navbar-right" />
+    <div class="navbar-right">
+      <NotificationIcon />
+    </div>
   </div>
 </template>
 
@@ -12,11 +14,13 @@
 import Vue from 'vue';
 import GameIcon from './GameIcon.vue';
 import Logo from './Logo.vue';
+import NotificationIcon from './NotificationIcon.vue';
 
 export default Vue.extend({
   components: {
     GameIcon,
-    Logo
+    Logo,
+    NotificationIcon
   },
   data() {
     return {
@@ -49,6 +53,11 @@ export default Vue.extend({
     flex-direction: row;
     height: 52px;
     padding: 18px 0px 0px 0px;
+  }
+
+  &-right {
+    @extend .navbar-left;
+    justify-content: flex-end;
   }
 }
 </style>
