@@ -58,6 +58,7 @@ export default Vue.extend({
   &-right {
     @extend .navbar-left;
     justify-content: flex-end;
+    padding: 20px 40px 0px 0px;
   }
 }
 </style>
