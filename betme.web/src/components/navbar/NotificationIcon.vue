@@ -15,7 +15,6 @@ export default Vue.extend({
       faBell
     };
   }
-
 });
 </script>
 
