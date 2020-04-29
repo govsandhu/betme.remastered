@@ -7,6 +7,7 @@
     <div class="navbar-right">
       <NotificationIcon />
       <ProfileIcon />
+      <NewBetButton />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@
 import Vue from 'vue';
 import GameIcon from './GameIcon.vue';
 import Logo from './Logo.vue';
+import NewBetButton from './NewBetButton.vue';
 import NotificationIcon from './NotificationIcon.vue';
 import ProfileIcon from './ProfileIcon.vue';
 
@@ -22,6 +24,7 @@ export default Vue.extend({
   components: {
     GameIcon,
     Logo,
+    NewBetButton,
     NotificationIcon,
     ProfileIcon
   },
@@ -60,7 +63,6 @@ export default Vue.extend({
 
   &-right {
     @extend .navbar-left;
-    justify-content: flex-end;
     padding: 20px 40px 0px 0px;
   }
 }
