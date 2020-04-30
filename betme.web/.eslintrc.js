@@ -36,6 +36,7 @@ module.exports = {
     'no-trailing-spaces': ['warn', { skipBlankLines: true }],
     'object-curly-newline': ['warn', { consistent: true }],
     'object-curly-spacing': ['warn', 'always'],
+    // 'prefer-destructuring': ['off'],
     'quotes': ['error', 'single', { avoidEscape: true }],
     'quote-props': ['warn', 'consistent-as-needed'],
     'semi': ['error', 'always'],

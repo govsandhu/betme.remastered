@@ -1,12 +1,10 @@
 <template>
   <div class="container">
-    <div class="notification-icon-container" @click="openNotificationDrawer()">
-      <div>
-        <font-awesome-icon :icon="faBell" class="bell" />
-        <span class="notification-dot" />
-      </div>
-      <NotificationDrawer v-if="showNotifications" class="notification-list" @close-notification-drawer="closeNotificationDrawer()" />
+    <div class="notification-icon-container" @mousedown.prevent="toggleNotificationDrawer()">
+      <font-awesome-icon :icon="faBell" class="bell" />
+      <span class="notification-dot" />
     </div>
+    <NotificationDrawer v-if="showNotifications" @close-notification-drawer="closeNotificationDrawer()" />
   </div>
 </template>
 
@@ -26,8 +24,8 @@ export default Vue.extend({
     };
   },
   methods: {
-    openNotificationDrawer(): void {
-      this.showNotifications = true;
+    toggleNotificationDrawer(): void {
+      this.showNotifications = !this.showNotifications;
     },
     closeNotificationDrawer(): void {
       this.showNotifications = false;
