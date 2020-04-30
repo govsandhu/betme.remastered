@@ -6,7 +6,7 @@
     </div>
     <div class="navbar-right">
       <NotificationIcon />
-      <ProfileIcon />
+      <UserOptionsIcon />
       <NewBetButton />
     </div>
   </div>
@@ -17,8 +17,8 @@ import Vue from 'vue';
 import GameIcon from './GameIcon.vue';
 import Logo from './Logo.vue';
 import NewBetButton from './NewBetButton.vue';
-import NotificationIcon from './NotificationIcon.vue';
-import ProfileIcon from './ProfileIcon.vue';
+import NotificationIcon from './notifications/NotificationIcon.vue';
+import UserOptionsIcon from './userOptions/UserOptionsIcon.vue';
 
 export default Vue.extend({
   components: {
@@ -26,7 +26,7 @@ export default Vue.extend({
     Logo,
     NewBetButton,
     NotificationIcon,
-    ProfileIcon
+    UserOptionsIcon
   },
   data() {
     return {
@@ -42,28 +42,28 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-.navbar {
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  top: 0;
-  height: 70px;
-  width: 100%;
-  line-height: normal;
-  align-items: center;
-  background-color: #232f4d;
-
-  &-left {
+  .navbar {
+    position: fixed;
     display: flex;
     flex-direction: row;
-    height: 52px;
-    padding: 20px 0px 0px 40px;
-  }
+    justify-content: space-between;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    line-height: normal;
+    align-items: center;
+    background-color: #232f4d;
 
-  &-right {
-    @extend .navbar-left;
-    padding: 20px 40px 0px 0px;
+    &-left {
+      display: flex;
+      flex-direction: row;
+      height: 52px;
+      padding: 20px 0px 0px 40px;
+    }
+
+    &-right {
+      @extend .navbar-left;
+      padding: 20px 40px 0px 0px;
+    }
   }
-}
 </style>
