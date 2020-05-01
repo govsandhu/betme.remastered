@@ -1,17 +1,16 @@
 <template>
-  <div ref="notificationList" tabindex="0" @blur="closeNotificationDrawer()">
-    <div v-if="!notifications.length" class="notification-list-none">
+  <div ref="notificationDrawer" tabindex="0" @blur="closeNotificationDrawer()">
+    <div v-if="!notifications.length" class="notification-drawer-none">
       <div class="default-message-container">
         <font-awesome-icon :icon="faCheckCircle" class="default-message-check" />
         <span>All clear!</span>
       </div>
     </div>
-    <div v-else class="notification-list">
+    <div v-else class="notification-drawer">
       <Notification
         v-for="notification in notifications"
         :key="notification.id"
         :notification="notification"
-        class="notification-list-full"
       />
     </div>
   </div>
@@ -71,9 +70,9 @@ export default Vue.extend({
   methods: {
     focus(): void {
       this.$nextTick(() => {
-        const notificationList = this.$refs.notificationList as HTMLDivElement;
+        const notificationDrawer = this.$refs.notificationDrawer as HTMLDivElement;
 
-        notificationList.focus();
+        notificationDrawer.focus();
       });
     },
     closeNotificationDrawer(): void {
@@ -99,7 +98,7 @@ export default Vue.extend({
     }
   }
 
-  .notification-list {
+  .notification-drawer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +112,7 @@ export default Vue.extend({
     overflow-y: auto;
   }
 
-  .notification-list-none {
+  .notification-drawer-none {
     display: flex;
     align-items: center;
     justify-content: center;
