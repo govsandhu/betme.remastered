@@ -29,6 +29,7 @@ module.exports = {
     ],
     'array-bracket-newline': ['warn', 'consistent'],
     'array-element-newline': ['warn', 'consistent'],
+    '@typescript-eslint/camelcase': 'off',
     'comma-dangle': ['warn', 'never'],
     'comma-spacing': ['warn', { before: false, after: true }],
     'max-len': ['warn', 180],
