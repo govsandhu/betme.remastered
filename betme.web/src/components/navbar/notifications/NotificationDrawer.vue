@@ -29,39 +29,7 @@ export default Vue.extend({
   data() {
     return {
       faCheckCircle,
-      // dummy data
-      notifications: [{
-        user_id: 1,
-        bet_id: 1,
-        notification_type: 'win',
-        read: false,
-        updated_at: new Date(),
-        created_at: new Date()
-      },
-      {
-        user_id: 2,
-        bet_id: 2,
-        notification_type: 'loss',
-        read: false,
-        updated_at: new Date(),
-        created_at: new Date()
-      },
-      {
-        user_id: 3,
-        bet_id: 3,
-        notification_type: 'invite',
-        read: false,
-        updated_at: new Date(),
-        created_at: new Date()
-      },
-      {
-        user_id: 2,
-        bet_id: 2,
-        notification_type: 'team-select',
-        read: false,
-        updated_at: new Date(),
-        created_at: new Date()
-      }] /* as INotification[] */
+      notifications: [] as INotification[]
     };
   },
   mounted() {
@@ -107,7 +75,7 @@ export default Vue.extend({
     background-color: $logo-accent;
     border-radius: 10px;
     margin: 2px 0px 0px -450px;
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
     outline: none;
     overflow-y: auto;
   }
